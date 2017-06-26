@@ -59,7 +59,7 @@ public class PlayerActivity extends AppCompatActivity {
         player.setPlayWhenReady(playWhenReady);
         player.seekTo(currentWindow, playbackPosition);
 
-        Uri uri = Uri.parse(getString(R.string.media_url_mp3));
+        Uri uri = Uri.parse(getString(R.string.media_url_mp4));
         MediaSource mediaSource = buildMediaSource(uri);
         player.prepare(mediaSource, true, false);
     }
